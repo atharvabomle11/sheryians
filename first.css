@@ -1,0 +1,119 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+
+
+#main{
+    height:100%;
+    width:100%;
+    background-color: rgba(114,88,101,0.881);
+    display:flex;
+}
+
+#part1{
+    height: 100%;
+    width:26%;
+    /* background-color: red; */
+}
+
+#part2{
+    height: 100%;
+    width:65%;
+    background-image: url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+#overlap{
+    height: 100%;
+    width:100%;
+    background-color: rgba(161, 145, 149, 0.211);
+}
+#part3{
+    height: 100%;
+    width:9%;
+    /* background-color: blue; */
+}
+
+#text-div{
+    /* height:300px; */
+    width:400px;
+    /* background-color: red; */
+    position: absolute;
+    top:50%;
+    left:7%;
+    transform: translate(0,-40%);
+}
+
+#text-div>h1{
+    font-size: 85px;
+    font-weight: 600;
+    font-family:'monument';
+    line-height: 68px;
+    text-transform: uppercase;
+    color:white;
+    letter-spacing: 10px;
+}
+
+#small-image-div{
+    height:320px;
+    width:250px;
+    background-color: red;
+    position:absolute;
+    top:50%;
+    right:7%;
+    transform: translate(0,-50%);
+    background-image: url("https://plus.unsplash.com/premium_photo-1669704098750-7cd22c35422b?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    opacity:1;
+}
+
+#vertical{
+    
+    /* width:100%; */
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    right:-46%;
+    top:-6%;
+}
+
+#vertical h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: "Roboto Mono", monospace;
+    color: transparent;
+    letter-spacing: 8px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    /* letter-spacing: 30px; */
+}
+#navbar{
+    position:absolute;
+    width:350px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:7%;
+    left:7%;
+}
+
+#navbar img{
+    height:60px;
+}
+
+#navbar h5{
+    color: white;
+    font-size: 20px;
+}
