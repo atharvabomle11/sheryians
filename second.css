@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+    /* background: cyan;; */
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+#main{
+    height: 100%;
+    width:100%;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main img{
+    height:600px;
+    z-index:99;
+    object-fit: cover;
+    width: 450x;
+}
+
+#scroll-div{
+    position:absolute;
+    top:20%;
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    /* overflow-y: hidden;     */
+}
+
+#scroll-div::-webkit-scrollbar{
+    display: none;
+}
+#scroll-div h1 {
+    display: inline-block;
+    font-size: 120px;   
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 10px;
+    /* background: red; */
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroll-div2{
+    position:absolute;
+    top:40%;
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    z-index:100;
+    overflow-y: hidden;    
+}
+
+#scroll-div2::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-div2 h1{
+    display: inline-block;
+    font-size: 120px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-right: 12px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+   
+}
+
+#scroll-div3{
+    position:absolute;
+    top:60%;
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;    
+}
+
+#scroll-div3::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-div3 h1{
+    display: inline-block;
+    font-size: 120px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 10px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;    
+}
+
+#text{
+    position:absolute;
+    top:10%;
+    width:50%;
+    font-size: 30px;
+    /* background-color: red; */
+    z-index: 101;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+@keyframes scroll {
+    0%{
+        transform:translateX(calc(-100%));
+    }
+    100%{
+        transform:translateX(0%);
+        
+    }
+}

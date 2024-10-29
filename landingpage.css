@@ -64,7 +64,7 @@ html,body{
     width:55%;
     height:100%;
     background-color: blueviolet;
-    background-image: url("https://wallpapers.com/images/featured/aesthetic-pictures-hv6f88paqtseqh92.jpg");
+    background-image: url("https://plus.unsplash.com/premium_photo-1672777647624-2ced35ca04d6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWVzdGhldGljfGVufDB8fDB8fHww");
     background-size: cover;
     background-position: center;
 }
@@ -132,3 +132,26 @@ html,body{
     text-decoration: none;
     border-bottom: 1px solid black;
 }
+
+@media(max-width: 500px){
+    #whole{
+        flex-direction: column;
+    }
+
+    #whole #left{
+        width:100%;
+        
+    }
+
+    #whole #right{
+        width:100%;
+        /* display:flex; */
+        
+    }
+}
+
+/* @media(max-width:400){
+    #whole #right{
+        flex-direction: column;    
+    }
+} */
