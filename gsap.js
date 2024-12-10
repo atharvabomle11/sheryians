@@ -35,7 +35,7 @@ gsap.from("#lleft",{
 
 gsap.from("#lleft h3",{
     opacity:0,
-    x:"-20%",
+    x:"-60%",
     delay:3,
     duration:1,
 })
@@ -48,14 +48,14 @@ gsap.from("#lbleft",{
 
 gsap.from("#emoji",{
     opacity:0,
-    x:"-20%",
+    x:"-60%",
     delay:3,
     duration:1,
 })
 
 gsap.from("#text",{
     opacity:0,
-    x:"-20%",
+    x:"-60%",
     delay:3,
     duration:1,
 })
@@ -75,7 +75,7 @@ gsap.from("#rtop",{
 })
  gsap.from("#write h3",{
     opacity:0,
-    x:-20,
+    x:-80,
     delay:3,
     duration:1,
  })
@@ -95,7 +95,7 @@ gsap.from("#rbottom",{
 
 gsap.from("#account i",{
     opacity:0,
-    x:-20,
+    y:50,
     delay:3,
     duration:1,
 })
